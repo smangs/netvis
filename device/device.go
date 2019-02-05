@@ -1,4 +1,4 @@
-package Device
+package device
 
 import (
 	validator "gopkg.in/go-playground/validator.v9"

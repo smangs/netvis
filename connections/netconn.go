@@ -1,9 +1,9 @@
-package Connections
+package connections
 
 import (
 	"log"
 
-	Crypto "github.com/smangs/netvis/crypto"
+	"github.com/smangs/netvis/crypto"
 	validator "gopkg.in/go-playground/validator.v9"
 )
 
@@ -24,7 +24,7 @@ func CreateNetConn(connIP string, connPort string) (NetConn, error) {
 	// TODO validate Port format "tcp/22, udp/53"
 
 	// create Sha1 for Connection.ID using netvis.crypto package
-	connID := Crypto.CreateSha1(connIP + connPort)
+	connID := crypto.CreateSha1(connIP + connPort)
 
 	// create initial Connection object.
 	conn := NetConn{
