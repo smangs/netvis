@@ -18,5 +18,4 @@ func CreateSha1(s string) string {
 	// get sha1 hash, convert and return byte as string
 	sum := sha1.Sum([]byte(s))
 	return hex.EncodeToString(sum[:])
-
 }
