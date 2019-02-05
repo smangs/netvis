@@ -23,8 +23,8 @@ type NetConn struct {
 func CreateNetConn(connIP string, connPort string) (NetConn, error) {
 	// TODO validate Port format "tcp/22, udp/53"
 
-	// create Sha256 for Connection.ID using netvis.crypto package
-	connID := Crypto.CreateSha256(connIP + connPort)
+	// create Sha1 for Connection.ID using netvis.crypto package
+	connID := Crypto.CreateSha1(connIP + connPort)
 
 	// create initial Connection object.
 	conn := NetConn{
