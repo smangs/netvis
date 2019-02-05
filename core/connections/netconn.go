@@ -3,7 +3,7 @@ package connections
 import (
 	"log"
 
-	"github.com/smangs/netvis/crypto"
+	"github.com/smangs/netvis/core/crypto"
 	validator "gopkg.in/go-playground/validator.v9"
 )
 
